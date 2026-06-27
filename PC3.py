@@ -68,7 +68,7 @@ with st.sidebar:
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
 if opciones == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>ya mañana</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 80; pxcolor: #F54927;'>BLOG :3</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -78,24 +78,22 @@ if opciones == 'Inicio':
     col1, col2 = st.columns(2)
 
     # Muestra una imagen en la primera columna
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("thais.png", caption='Thais :p', width=300)
     # "ellie.png" es el archivo de imagen que se visualizará -> Aquí debes reemplazar por tu foto de perfil
     # El texto "Ellie" aparecerá como descripción de la imagen
     # width=300 establece el ancho de la imagen en 300 píxeles
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Holiii :3 mi nombre es Thais Guillen, tengo 20 años y soy de Lima, Perú. Actualmente estudio Periodismo. Lo que más me gusta de mi carrera es que es muy diversa y me permite conocer distintas realidades. Desde mi posición, siento que puedo aportar a generar un cambio en la sociedad y ayudar a mi comunidad.
+En el futuro me gustaría trabajar como redactora en algún medio de comunicación o dedicarme al periodismo de investigación o al periodismo musical. Durante mi tiempo libre disfruto escribiendo ensayos, especialmente sobre política, literatura y, sobre todo, música.
+Mis artistas favoritos son The Weeknd, Death Grips y JPEGMAFIA. También soy una gran aficionada al anime; entre mis favoritos están Neon Genesis Evangelion, Monster y Jujutsu Kaisen. :)
+
+
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
-    col2.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto}</div>", unsafe_allow_html=True)
+    col2.markdown(f"<div style='text-align: justify; font-size:6xp;'>{texto}</div>", unsafe_allow_html=True)    
     # El estilo CSS justifica el texto y establece un tamaño de fuente de 18 píxeles
     # f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>"
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
